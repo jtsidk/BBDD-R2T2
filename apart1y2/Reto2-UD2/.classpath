@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="apartado1-1"/>
+	<classpathentry kind="src" path="apartado1-2"/>
+	<classpathentry kind="src" path="apartado2"/>
+	<classpathentry kind="lib" path="C:/Users/yasin/Downloads/sqlite-jdbc-3.47.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yasin/Downloads/h2-2.3.232.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
