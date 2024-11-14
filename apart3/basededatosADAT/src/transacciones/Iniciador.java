@@ -20,13 +20,13 @@ public class Iniciador {
 	}
 	
 	public static void crearBaseDeDatos(Connection conn) {
-		String query = "create table if not exists clientes (id INT PRIMARY KEY, saldo INT)";
-		try (PreparedStatement st = conn.prepareStatement(query)) {
-			st.execute(query);
-			System.out.println("Tabla clientes creada o ya existe.");
-		}catch (SQLException e) {
-			e.printStackTrace();
-		}
+	    String query = "create table if not exists clientes (id INT PRIMARY KEY, saldo INT)";
+	    try (Statement st = conn.createStatement()) {
+	        st.execute(query);
+	        System.out.println("Tabla clientes creada o ya existe.");
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
 	}
 	
 	public static void insertarDatosClientes(Connection conn) {

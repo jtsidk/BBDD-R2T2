@@ -7982,3 +7982,13 @@ update clientes set saldo = saldo-? where id = ? and saldo >= ? [42102-197]
 org.h2.jdbc.JdbcSQLException: Tabla "CLIENTES" no encontrada
 Table "CLIENTES" not found; SQL statement:
 update clientes set saldo = saldo-? where id = ? and saldo >= ? [42102-197]
+2024-11-14 09:36:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Este metodo no esta permitido para una sentencia preparada; en su lugar use una sentencia regular.
+This method is not allowed for a prepared statement; use a regular statement instead. [90130-197]
+	at h2@1.4.197/org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at h2@1.4.197/org.h2.message.DbException.get(DbException.java:179)
+	at h2@1.4.197/org.h2.message.DbException.get(DbException.java:155)
+	at h2@1.4.197/org.h2.message.DbException.get(DbException.java:144)
+	at h2@1.4.197/org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:366)
+	at transacciones.Iniciador.crearBaseDeDatos(Iniciador.java:25)
+	at transacciones.Iniciador.main(Iniciador.java:15)
